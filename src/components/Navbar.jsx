@@ -1,7 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="navbar">
       <img src={logo} alt="logo" />
@@ -19,7 +21,7 @@ const Navbar = () => {
           <li>Contact</li>
         </NavLink>
       </ul>
-      <button>Get Started</button>
+      <button onClick={() => navigate("/about")}>Get Started</button>
     </div>
   );
 };
