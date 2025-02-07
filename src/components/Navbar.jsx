@@ -21,7 +21,9 @@ const Navbar = () => {
           <li>Contact</li>
         </NavLink>
       </ul>
-      <button onClick={() => navigate("/about")}>Get Started</button>
+      <button onClick={() => navigate("/about", { replace: true })}>
+        Get Started
+      </button>
     </div>
   );
 };
