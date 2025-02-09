@@ -4,7 +4,7 @@ const Jobs = () => {
   const jobsData = useLoaderData();
 
   return (
-    <div>
+    <div className="jobs">
       {jobsData.map((job) => {
         return (
           <Link key={job.id}>
